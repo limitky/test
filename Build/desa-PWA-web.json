@@ -1,0 +1,14 @@
+{
+"companyName": "pandas",
+"productName": "Pilsener",
+"dataUrl": "desa-PWA-web.data.unityweb",
+"asmCodeUrl": "desa-PWA-web.asm.code.unityweb",
+"asmMemoryUrl": "desa-PWA-web.asm.memory.unityweb",
+"asmFrameworkUrl": "desa-PWA-web.asm.framework.unityweb",
+"TOTAL_MEMORY": 1073741824,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#921518",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}
