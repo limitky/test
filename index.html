@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA PWA</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#ffee00">
+  <meta name="theme-color" content="#ffee00">
+</head>
+<body>
+
+  <div class="webgl-content">
+      <div id="gameContainer" style="width: 400px; height: 800px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">PilsenerMundial</div>
+      </div>
+  </div>
+  
+  <script src="./upup.min.js"></script>
+  <script src="TemplateData/UnityProgress.js"></script>  
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Web.json", {onProgress: UnityProgress});
+  </script>
+  <script>
+  UpUp.start({
+    'content-url': 'offline.html',
+    'assets': ['./assets/img/cat-o.jpg', './assets/css/style.css', './pawpaw.svg']
+  });
+  </script>
+</body>
+</html>
